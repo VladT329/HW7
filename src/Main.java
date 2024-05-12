@@ -40,39 +40,30 @@ public class Main {
         System.out.println();
 
         System.out.println("Задание 3");
-        for (int i = 2; i < oneTwoThree.length; i--) {
-            if (i > 0) {
-                System.out.print(oneTwoThree[i] + ", ");
-            } else if (i == 0) {
-                System.out.print(oneTwoThree[i]);
-            }
+        for (int i = 2; i > 0; i--) {
+            System.out.print(oneTwoThree[i] + ", ");
         }
+        System.out.print(oneTwoThree[0]);
         System.out.println();
-        for (int i = 2; i < threeFractionalNumbers.length; i--) {
-            if (i > 0) {
-                System.out.print(threeFractionalNumbers[i] + ", ");
-            } else if (i == 0) {
-                System.out.print(threeFractionalNumbers[i]);
-            }
+        for (int i = 2; i > 0; i--) {
+            System.out.print(threeFractionalNumbers[i] + ", ");
         }
+        System.out.print(threeFractionalNumbers[0]);
         System.out.println();
-        for (int i = 2; i < arbitraryArray.length; i--) {
-            if (i > 0) {
-                System.out.print(arbitraryArray[i] + ", ");
-            } else if (i == 0) {
-                System.out.print(arbitraryArray[i]);
-            }
+        for (int i = 2; i > 0; i--) {
+            System.out.print(arbitraryArray[i] + ", ");
         }
+        System.out.print(arbitraryArray[0]);
         System.out.println();
         System.out.println();
 
         System.out.println("Задание 4");
         for (int i = 0; i < oneTwoThree.length; i++) {
             if ((oneTwoThree[i] % 2) != 0) {
-                System.out.println(oneTwoThree[i] + 1);
-            } else if ((oneTwoThree[i] % 2) == 0) {
-                System.out.println(oneTwoThree[i]);
+                oneTwoThree[i] = oneTwoThree[i] + 1;
             }
         }
+        System.out.println(Arrays.toString(oneTwoThree));
+
     }
 }
